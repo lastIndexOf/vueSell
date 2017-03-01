@@ -1,0 +1,25 @@
+html
+body
+	font-family '微软雅黑', 'PingFang SC', 'STHeightSC-Light', 'Helvetical-Leight', 'arial', 'sans-serif'
+
+
+border-1px($color)
+	position relative
+	&::after
+		content ''
+		display block
+		position absolute
+		left 0
+		bottom 0
+		width 100%
+		z-index 5
+		border-top 1px solid $color
+		
+border-none()
+	&::after
+		display none
+
+bg-image($url)
+	background-image url($url+'@2x.png')
+	@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+		background-image url($url+'@3x.png')
