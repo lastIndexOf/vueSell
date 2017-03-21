@@ -20,7 +20,7 @@
     <transition name="fade">
       <router-view @addballs="addball" :seller="seller" :goods="goods"></router-view>
     </transition>
-    <shopcart ref="shopCart" :selectMenu="selectMenu" :deliveryPrice="seller.deliveryPrice" :minPrice="seller.minPrice"><shopcart>
+    <shopcart ref="shopCart" :selectMenu="selectMenu" :deliveryPrice="seller.deliveryPrice" :minPrice="seller.minPrice"></shopcart>
   </div>
 </template>
 
